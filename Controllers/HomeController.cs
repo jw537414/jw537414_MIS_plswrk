@@ -15,14 +15,14 @@ namespace jw537414_MIS_plswrk.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "About Jenna";
 
             return View();
         }
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "Jenna's Contact Information";
 
             return View();
         }
