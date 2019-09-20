@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using jw537414_MIS_plswrk.Models; // This is needed to access the models
 using System.Data.Entity; // this is needed to access the DbContext object
-namespace MIS4200Luce.DAL
+namespace jw537414_MIS_plswrk.DAL
 {
     public class MIS4200Context : DbContext // inherits from DbContext
     {
