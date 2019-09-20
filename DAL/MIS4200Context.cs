@@ -16,9 +16,9 @@ namespace jw537414_MIS_plswrk.DAL
         // Include each object here. The value inside <> is the name of the class,
         // the value outside should generally be the plural of the class name
         // and is the name used to reference the entity in code
-        public DbSet<Student> Student { get; set; }
-        public DbSet<Teacher> Teacher { get; set; }
-        public DbSet<Class> Class { get; set; }
+        public DbSet<Student> Students { get; set; }
+        public DbSet<Teacher> Teachers { get; set; }
+        public DbSet<Class> Classes { get; set; }
         
     }
 }
