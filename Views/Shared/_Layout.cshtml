@@ -24,9 +24,16 @@
 
                     <li>@Html.ActionLink("About", "About", "Home")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                    <li>@Html.ActionLink("Student", "Students", "Home")</li>
-                    <li>@Html.ActionLink("Classes", "Classes", "Home")</li>
-                    <li>@Html.ActionLink("Teachers", "Teachers", "Home")</li>
+                    <li>
+                        @Html.ActionLink("Students", "Index", "Students")
+                    </li>
+
+                    <li>
+                        @Html.ActionLink("Classes", "Index", "Classes")
+                    </li>
+
+                    <li> @Html.ActionLink("Teachers", "Index", "Teachers")
+                    </li>
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>
