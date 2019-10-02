@@ -9,8 +9,10 @@ using System.Web.Mvc;
 using jw537414_MIS_plswrk.DAL;
 using jw537414_MIS_plswrk.Models;
 
+
 namespace jw537414_MIS_plswrk.Controllers
 {
+    @model IEnumerable<Test.Models.Member>
     public class StudentsController : Controller
     {
         private MIS4200Context db = new MIS4200Context();
