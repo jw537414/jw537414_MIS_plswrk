@@ -18,7 +18,10 @@ namespace jw537414_MIS_plswrk.Controllers
         private MIS4200Context db = new MIS4200Context();
 
         // GET: Students
-        public ActionResult Index => View(db.Students.ToList());
+        public ActionResult Index()
+        {
+            return View(db.Students.ToList());
+        }
 
         // GET: Students/Details/5
         public ActionResult Details(int? id)

@@ -26,10 +26,11 @@ namespace jw537414_MIS_plswrk.Models
         public string email { get; set; }
         [Display(Name = "Teacher phone number")]
         [DataType(DataType.PhoneNumber)]
-        [RegularExpression(@"^(\(\d{3}|) |\d{3}-)\d{3}-\d{4}$",
+        [RegularExpression(@"^(\(\d{3}\) |\d{3}-)\d{3}-\d{4}$",
             ErrorMessage = "Phone number must be in the format (xxx) xxx-xxxx or xxx-xxx-xxxx")]
         public string phone { get; set; }
 
-        public ICollection<Class> Class { get; set; }
+        public ICollection<Class> Class { get; set; }
+
     }
 }
