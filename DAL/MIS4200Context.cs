@@ -10,8 +10,13 @@ namespace jw537414_MIS_plswrk.DAL
     {
         public MIS4200Context() : base("name=DefaultConnection")
         {
-            // this method is a 'constructor' and is called when a new context is created
-            // the base attribute says which connection string to use
+
+            // add the SetInitializer statement here
+            Database.SetInitializer(new MigrateDatabaseToLatestVersion<MIS4200Context,
+           jw537414_MIS_plswrk.Migrations.MISContext.Configuration>("DefaultConnection"));
+
+            // add this method - it will be used later
+
         }
         // Include each object here. The value inside <> is the name of the class,
         // the value outside should generally be the plural of the class name
@@ -19,6 +24,12 @@ namespace jw537414_MIS_plswrk.DAL
         public DbSet<Student> Students { get; set; }
         public DbSet<Teacher> Teachers { get; set; }
         public DbSet<Class> Classes { get; set; }
-        
+
+
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+        }
     }
 }
