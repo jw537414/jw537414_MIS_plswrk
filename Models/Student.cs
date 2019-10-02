@@ -9,6 +9,7 @@ namespace jw537414_MIS_plswrk.Models
 {
     public class Student
     {
+        [Key]
         [Display(Name = "Student ID")]
         public int studentID { get; set; }
 
